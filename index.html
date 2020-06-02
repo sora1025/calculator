@@ -4,55 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
-  <link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
-  <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
-  <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
-  <script src="assets/js/ace-extra.min.js"></script>
-  <title>Calculator</title>
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<script src="assets/js/ace-extra.min.js"></script>
+  <title>stock</title>
   <style>
-    #container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-    }
+    
   </style>
 </head>
 <body>
   <div id = "container">
-    <div class="cal-btn">
-      <div class="btn-group">
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-      </div>
-      <p></p>
-      <div class="btn-group">
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-      </div>
-      <p></p>
-      <div class="btn-group">
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-      </div>
-      <p></p>
-      <div class="btn-group">
-        <button class="btn btn-undo">+</button>
-        <button class="btn btn-undo">-</button>
-        <button class="btn btn-undo">x</button>
-        <button class="btn btn-undo">/</button>
-        <button class="btn btn-undo">=</button>
-      </div>
-      <p></p>
-    </div>
-
-    <div class="cal-wrap"> 
-
-    </div>
+     <div class="rol-xs-12">
+       <table id="simple-table" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>股票名称</th>
+              <th>当前价格</th>
+              <th>当日跌涨幅（%）</th>
+              <th>当日波动价格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>股票A</td>
+              <td class="price">27.66</td>
+              <td class="change" >0</td>
+              <td class="price-diff"></td>
+            </tr>
+            <tr>
+              <td>股票B</td>
+              <td class="price">38.99</td>
+              <td class="change">0</td>
+              <td class="price-diff"></td>
+            </tr>
+            <tr>
+              <td>股票C</td>
+              <td class="price">26.91</td>
+              <td class="change">0</td>
+              <td class="price-diff"></td>
+            </tr>
+            <tr>
+              <td>股票D</td>
+              <td class="price">26.92</td>
+              <td class="change">0</td>
+              <td class="price-diff"></td>
+            </tr>
+          </tbody>
+       </table>
+     </div>
   </div>
   <script src="./index.js"></script>
 </body>
